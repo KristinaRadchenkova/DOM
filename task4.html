@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4. Поиск и изменение элементов по классу</title>
+</head>
+<body>
+    <p class="description">Привет, я текст</p>
+    <p class="description">Раз</p>
+    <p class="description">Два</p>
+    <p class="description">Три</p>
+
+    <script>
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach((element) => {
+            element.textContent = 'Измененный текст';
+        });
+    </script>
+</body>
+</html>
