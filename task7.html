@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="description">Привет, я description</p>
+    <p class="another-description">Я другой класс</p>
+    <p class="another-description">Я другой класс</p>
+    <p class="description">Привет, я description</p>
+    <p class="description">Привет, я description</p>
+    <button class="button">Удалить элемент</button>
+
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', () => {
+            const description = document.querySelector('.description');
+            description.remove();
+        });
+    </script>
+</body>
+</html>

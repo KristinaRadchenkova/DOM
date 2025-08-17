@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6. Добавление нового элемента в DOM</title>
+</head>
+<body>
+    <button class="button">Добавить элемент</button>
+    <script>
+        const button = document.querySelector('.button');
+        button.addEventListener('click', () => {
+            const newElement = document.createElement('p');
+            newElement.textContent = 'Новый элемент';
+            document.body.appendChild(newElement);
+        });
+    </script>
+</body>
+</html>

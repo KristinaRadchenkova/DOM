@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Lorem, ipsum.</h1>
+    <button class="btn">Скрыть</button>
+
+    <script>
+        const header = document.querySelector('.heading');
+        const button = document.querySelector('.btn');
+
+        let isHidden = false;
+
+        button.addEventListener('click', () => {
+            if (!isHidden) {
+                header.style.display = 'none';
+                button.textContent = 'Показать';
+                isHidden = true;
+            } else {
+                header.style.display = 'block';
+                button.textContent = 'Скрыть';
+                isHidden = false;
+            }     
+        });
+
+    </script>
+</body>
+</html>

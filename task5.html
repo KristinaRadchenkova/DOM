@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5. Работа с querySelectorAll</title>
+</head>
+<body>
+    <p class="description">Привет, я description</p>
+    <p class="another-description">Я другой класс</p>
+    <p class="another-description">Я другой класс</p>
+    <p class="description">Привет, я description</p>
+    <p class="description">Привет, я description</p>
+
+    <script>
+        const descriptions = document.querySelectorAll('.description');
+        descriptions.forEach((element) => {
+            element.textContent = "Новый текст";
+        });
+    </script>
+</body>
+</html>
